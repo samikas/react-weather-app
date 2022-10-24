@@ -39,7 +39,9 @@ function App() {
     }
   }
   useEffect(() => {
-    setFavorites(localStorageData);
+    if(localStorageData.length > 0) {
+      setFavorites(localStorageData);
+    }
     if(weather.cod === "404"){
       setErrorMessage("City not found");
       showToast();
