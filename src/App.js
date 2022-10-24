@@ -38,20 +38,18 @@ function App() {
       });      
     }
   }
-  useEffect(() => {
-    if(localStorageData.length > 0) {
+  useEffect(() => { 
       setFavorites(localStorageData);
-    }
     if(weather.cod === "404"){
       setErrorMessage("City not found");
       showToast();
     }
-  }, [weather]);
+  }, [weather, localStorageData]);
 
   const onFavoritePress = () => {
     let duplicate = false;
     if(favorites !== null){
-      favorites.map((item) => {
+      favorites.forEach((item) => {
       if(item.name === weather.name){
         console.log(item.name);
         console.log(weather.name);
