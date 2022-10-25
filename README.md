@@ -2,7 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The app was made based off of a tutorial and improved further with own ideas. It lets you search the weather of different cities, add cities to favourites and display favorites by selecting a city from the favorites list. The app also has error message displaying in a toast notification. 
+The app was made based off of a tutorial and improved further with own ideas. It lets you search the weather of different cities, add cities to favourites and display favorites by selecting a city from the favorites list. The app also has error message displaying in a toast notification. The app deploys to Heroku automatically every time the code is changed in Github.
+
+## Link to app
+
+https://react-weather-app-gh.herokuapp.com/
 
 ## Running project
 
